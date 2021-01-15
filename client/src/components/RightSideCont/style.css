@@ -1,0 +1,40 @@
+#npcContainer{
+    background-color: rgb(29, 35, 53);
+    width: 100%;
+    border: solid 1px rgb(0, 89, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+    padding: 0;
+    word-wrap: break-word;
+    max-height: 10vh;
+    
+}
+#npcInfo p{
+    padding: 0;
+    margin: 0;
+}
+#imgContainer{
+    background-color: rgb(65, 29, 29);
+    height: 100%;
+    
+    
+    
+}
+#npcContainer img{
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(148, 22, 64);
+}
+#npcInfo{
+    color: rgb(21, 19, 139);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+hr{
+    padding: 0;
+    margin: 0;
+}

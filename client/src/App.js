@@ -25,5 +25,17 @@ function App() {
     </Router>
   );
 }
-
 export default App;
+
+
+
+// import React from "react";
+// import Wrapper from "./components/Wrap";
+
+// export default function App() {
+//   return (
+//     <div styleName="margin:0px; padding:0px;">
+//       <Wrapper/>
+//     </div>
+//   )
+// }
