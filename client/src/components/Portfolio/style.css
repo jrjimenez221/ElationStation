@@ -1,0 +1,27 @@
+#ediv{
+    padding-top: 1vh;
+    background-color: rgb(64, 68, 68);
+    position: absolute;
+    right: 1vw;
+    top: 10vh;
+    min-height: 80vh;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 3px  rgb(27, 40, 97);
+}
+.img-container{
+    text-align: center;
+    height: 50%;
+    background-color: chartreuse;
+    background-image: url("../../assets/backgroundSample.png");
+}
+.img-container img{
+    max-height: 40vh;
+}
+#Name{
+    text-align: center;
+    font-size: 30px;
+}
+.npcName{
+    font-size: 20px;
+}
