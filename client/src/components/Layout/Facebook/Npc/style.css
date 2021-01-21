@@ -1,0 +1,46 @@
+#npcContainer{
+    background-color: rgb(56, 57, 58);
+    width: 100%;
+    border: solid 2px rgb(0, 89, 255);
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 0;
+    word-wrap: break-word;
+    max-height: 10vh;
+    min-height: 10vh;
+    
+    
+}
+#imgCont{
+    content: inherit;
+    object-fit: cover;
+    max-height: 10vh;
+    
+    /* background-image: url(../../../assets/thePursuer.png); */
+    background-size: 100% 100%;
+}
+#npcImg{
+    object-fit: fill;
+    background-color: azure;
+}
+
+
+
+
+#npcInfo p{
+    padding: 0;
+    margin: 0;
+}
+
+
+#npcInfo{
+    color: rgb(21, 19, 139);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+hr{
+    padding: 0;
+    margin: 0;
+}
