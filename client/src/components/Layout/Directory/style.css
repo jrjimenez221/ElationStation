@@ -1,0 +1,27 @@
+#leftSide{
+    padding: 0px;
+    padding-top: 10px;
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    border: solid 3px rgb(39, 46, 82);
+    
+    border-top: solid 0px;
+    border-left: solid 0px;
+    border-radius: 0% 0% 10px 0%;
+    
+}
+.menuIcon{
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    
+
+}
+#settingIcon{
+    position: absolute;
+    bottom: 0;
+}
+

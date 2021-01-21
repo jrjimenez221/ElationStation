@@ -5,7 +5,7 @@ import background from "../../../assets/bg2.jpg";
 
 
 
-function Home() {
+function SignInPage() {
     return (
     <div>
         <div className="container-fluid homeStyle" style={{
@@ -17,4 +17,4 @@ function Home() {
     </div>
     )
 }
-export default Home;
+export default SignInPage;
