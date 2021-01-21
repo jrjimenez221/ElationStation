@@ -1,0 +1,16 @@
+
+#interface{
+    min-height: 80vh;
+    border-radius:0% 0% 10px 0%;
+    overflow: auto;
+    border-top: none;
+    position: relative;
+    margin-left: 1vw;
+}
+
+.box{
+    height: 5vh;
+    width: 5vh;
+    background-color: blueviolet;
+    margin: 1vh;
+}
