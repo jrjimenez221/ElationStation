@@ -12,11 +12,11 @@ function RightSide() {
       
         <div  id="rightSide" className="col-12 col-lg-11 bg-dark">
           <div className="row justify-content-center mb-0 p-0">
-            <h5 className="m-0 p-0">LinkedIn</h5>
+            <h5 className="m-0 p-0">Please Sign In</h5>
           </div>
 
           <div id="appNav" className="row justify-content-center mb-2">
-            <ul  class="nav nav-tabs">
+            {/* <ul  class="nav nav-tabs">
 
               <li class="nav-item ">
                 <a class="nav-link active pt-0 text-white" href="#">GitHub</a>
@@ -33,37 +33,11 @@ function RightSide() {
               <li class="nav-item" style={{}}>
                 <a class="nav-link pt-0 disabled" href="#">Disabled</a>
               </li>
-            </ul>
+            </ul> */}
+
           </div>
-          <div style={{overflowY:"scroll",maxHeight:"90%"}}>
 
           
-
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-            <Npc/>
-          </div>
         </div>
       </div>
 
