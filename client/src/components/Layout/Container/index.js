@@ -23,9 +23,42 @@ export const Container = () => {
           <Portfolio />
           
         </div>
+      </div>
+
+    </div> 
 
 
-      </div> 
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* <div className='container-fluid'>
+        <div className='row'>
+          <div className='col-sm-1'></div>
+          <div className='col-sm-11'>
+            <div className='row'>
+              <div className='col-sm-12'>
+                <div className='row'>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div> */
     )
 }

@@ -3,9 +3,18 @@ import "./style.css";
 import { Route, BrowserRouter as Router, Switch, Link, Redirect } from "react-router-dom";
 // import { useAuthState } from 'react-firebase-hooks/auth';
 // import { useCollectionData } from 'react-firebase-hooks/firestore';
-
+import API from "../../../utils/API.js"
 
 function SignIn() {
+  function signIn(event) {
+    event.preventDefault();
+console.log(event.target)
+  }
+  function signUp(event) {
+    event.preventDefault();
+console.log(event.target)
+API.signUp()
+  }
   return (
     <div className="container">
       <div className="row justify-content-center ">
@@ -13,19 +22,19 @@ function SignIn() {
           
           
           
-          <form>
+          <form onSubmit= {signIn}>
 
-            <div class="form-group">
-              <input type="email" class="form-control mt-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
+            <div className="form-group">
+              <input type="email" className="form-control mt-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"/>
             </div>
 
-            <div class="form-group">
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"/>
+            <div className="form-group">
+              <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"/>
             </div>
 
             <div className="row justify-content-between pl-4 pr-4">
-              <button type="submit" class="btn btn-primary col-5"><Link to="/station">Sign In</Link></button>
-              <button type="submit" class="btn btn-primary col-5">Sign Up</button>
+              <button type="submit" className="btn btn-primary col-5"><Link to="/station">Sign In</Link></button>
+              <button type="button" onClick= {signUp} className="btn btn-primary col-5">Sign Up</button>
             </div>
             
           </form>
