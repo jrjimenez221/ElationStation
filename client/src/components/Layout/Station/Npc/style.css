@@ -1,7 +1,7 @@
 #npcContainer{
     background-color: rgb(56, 57, 58);
     width: 100%;
-    border: solid 2px rgb(0, 89, 255);
+    border: solid 2px rgb(39, 46, 82);
     border-radius: 10px;
     margin-bottom: 5px;
     padding: 0;
@@ -16,7 +16,7 @@
     object-fit: cover;
     max-height: 10vh;
     
-    /* background-image: url(../../../assets/thePursuer.png); */
+    background-image: url(thePursuer.png);
     background-size: 100% 100%;
 }
 #npcImg{
@@ -34,10 +34,10 @@
 
 
 #npcInfo{
-    color: rgb(21, 19, 139);
+    color: rgb(39, 46, 82);
     margin: 0;
     padding: 0;
-    text-align: center;
+    
     
 }
 hr{

@@ -13,7 +13,7 @@ function Portfolio() {
 
       <div id="ediv" className="col-12 col-md-5 mr-5 align-self-center">
         <div className="img-container col-12" >
-          <img src="../icons/MiniReyIcon.png" alt="ds" />
+          
         </div>
         
         <h3 className="text-center">Username<span className="npcName">(Jose R. Jimenez)</span></h3>
