@@ -1,17 +1,16 @@
 import React from "react";
-import "./style.css";
+
 
 import Directory from "../../Station/Directory"; 
 
 
 
 import { Route, BrowserRouter as Router, Switch, Link, Redirect } from "react-router-dom";
-import RoadConstruction from "../RoadConstruction";
+import SettingsList from "../Layout";
 
 
 
-
-function ChannelFacebook() {
+function SettingsPage() {
   return (
     
     <div className="row h-100">
@@ -22,10 +21,9 @@ function ChannelFacebook() {
           </div>
         </div>
 
-        <div id="channelFbOutput" className="col-10 col-md-11 h-100">
-          <RoadConstruction />
-          
-
+        <div className="col-10 col-md-11">
+          <SettingsList />
+            
         </div>
 
         
@@ -36,4 +34,4 @@ function ChannelFacebook() {
   );
 }
 
-export default ChannelFacebook;
+export default SettingsPage;

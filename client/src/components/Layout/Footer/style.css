@@ -1,5 +1,8 @@
 footer{
     height: 5vh;
-    background-color: lawngreen;
-    margin-top: auto;
+    border-top: 3px solid purple;
+    margin-top: 2vh;
+    position: absolute;
+    bottom: 0;
+    top: 100;
 }

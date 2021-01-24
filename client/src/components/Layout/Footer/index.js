@@ -3,7 +3,7 @@ import "./style.css";
 
 function Footer() {
   return (
-    <footer className="col-12 align-self-end bg-danger">
+    <footer className="col-12 align-self-end bg-dark">
 
     </footer>
   );

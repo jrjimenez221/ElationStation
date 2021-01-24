@@ -24,9 +24,6 @@ console.log(data);
 })
 
 
-
-
-
 // Example POST method implementation:
 // async function postData(
 //     url = '',

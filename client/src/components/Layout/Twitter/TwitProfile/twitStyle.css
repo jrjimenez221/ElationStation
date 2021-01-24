@@ -1,17 +1,19 @@
-#ediv{
+#TwitFeed{
     padding-top: 1vh;
     background-color: rgb(64, 68, 68);
     
     min-height: 80vh;
-    border-radius: 10px;
+    
     overflow: hidden;
-    border: solid 3px  rgb(27, 40, 97);
+    border-left: solid 3px  rgb(36, 44, 83);
+    border-right: solid 3px  rgb(36, 44, 83);
 }
 .img-container{
     text-align: center;
     height: 50%;
-    background-image: url("../../../../assets/backgroundSample.png");
+    /* background-image: url(""); */
 }
+
 .img-container img{
     max-height: 40vh;
 }
@@ -23,13 +25,15 @@
     font-size: 20px;
 }
 
-#DelFoot{
+#TwitterStamp{
     position: absolute;
     bottom: 0;
     right: 0;
     align-self: center;
     height: 100px;
     width: 100px;
-    background-color: aqua;
-    
+
+}
+.bgSample{
+    background-image: url("../../../../assets/backgroundSample.png");
 }
