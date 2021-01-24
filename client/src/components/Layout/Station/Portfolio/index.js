@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-function Portfolio() {
+function StationPortfolio() {
   return (
     
 
 
-      <div id="ediv" className="col-12 col-md-8 align-self-center">
+      <div id="ediv" className="col-12 col-md-11 align-self-center">
         <div className="img-container col-12" >
           <img src="../icons/MiniReyIcon.png" alt="ds" />
         </div>
@@ -45,5 +45,5 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default StationPortfolio;
  

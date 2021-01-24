@@ -1,79 +1,67 @@
 import React from "react";
-import SignInPage from "./components/Layout/Home";
+import "./appStyle.css";
+
+import SignInPage from "./components/Layout/SignInPage";
 import NavBar from "./components/Layout/Nav";
-import Den from "./components/Layout/Station";
-import Directory from "./components/Layout/Directory";
-import RightSide from "./components/Layout/RightSide";
-import ChannelFB from "./components/Layout/Facebook/ChannelFB/";
-import ChannelTwit from "./components/Layout/Twitter/ChannelTwit/";
-import ChannelLinkedIn from "./components/Layout/LinkedIn/ChannelLinkedIn/";
+import Footer from "./components/Layout/Footer";
+import Station from "./components/Layout/Station/StationLayout";
+import ChannelTwit from "./components/Layout/Twitter/ChannelTwit";
+// import ChannelLinkedIn from "./components/Layout/LinkedIn/ChannelLinkedIn";
 
 
-import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ChannelLinkedIn from "./components/Layout/LinkedIn/ChannelLinkedIn";
+import SettingsPage from "./components/Layout/Settings/Page";
+import ChannelFacebook from "./components/Layout/Facebook/ChannelFB";
 
+export default function App() {
+  return (
+    <Router>
+      <div id="thePage" className="container-fluid  p-0 m-0" style={{position:"absolute", right:"0", left:"0", top:"0", bottom:"0"}}>
+        
+        
+      
+        <div id="motherFooter" className="row m-0 p-0 h-100" >
+          <div id="first12" className="col-12 m-0 " >
 
+          
 
-export default function App() { 
-return (
-  <Router>
+            <Switch>
+                      
+              <Route exact path="/station">
+                <Station />
+              </Route>
+              
+              <Route exact path="/station/twitter/home">
+                <ChannelTwit/>
+              </Route>
+              
+              <Route exact path="/station/linkedin">
+                <ChannelLinkedIn/>
+              </Route>
+              <Route exact path="/station/facebook">
+                <ChannelFacebook/>
+              </Route>
+              
+              <Route exact path="/station/settings">
+                <SettingsPage/>
+              </Route>
+                                    
+              <Route exact path="/" > 
+                <SignInPage />
+              </Route>
 
-    
-      <div className="p-0 m-0" style={{minHeight:"50vh", maxHeight:"100vh",maxWidth:"100vw",overflowX:"hidden"}}>
-        <NavBar/>
-        <div className="container-fluid  no-gutters mt-0 row p-0 m-0 " style={{minHeight:"50vh"}} >
-
-      <div className="col-12 row p-0 m-0 " style={{maxHeight:"100%"}}>
-
-        <div className="col-12 col-md-1 row p-0 " >
-
-
-          <div className="col-10 " style={{maxHeight:"100%"}}>
-            <Directory/>
+            </Switch> 
           </div>
-
         </div>
-
-        <div className="col-11 row bg-info m-0 p-0">
-
-         
           
-          <Switch>
+        
+        
 
-          <Route exact path="/station/facebook" >
-            
-            <ChannelFB />
-          </Route> 
-
-          <Route exact path="/station/twitter" >
-            <ChannelTwit />
-
-          </Route>
-
-          <Route exact path="/station/LinkedIn" >
-            <ChannelLinkedIn />
-
-          </Route>
-
-          <Route exact path="/station" >
-            <Den/>
-
-          </Route>
-          
-          {/* <Route path="/den/station" component={Portfolio} /> */}
-          {/* <Route path="/den/facebook" component={Facebook} /> */}
-          <Route path="/" exact component={SignInPage} />
-        </Switch>
-          
-        </div>
-
-
-      </div> 
-    </div>
         
         
       </div>
-
     </Router>
-  )
+  );
 }
- 
+

@@ -1,0 +1,27 @@
+
+.menuIcon{
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    color: rgb(126, 126, 126);
+}
+.menuIcon:hover{
+    
+    color: rgb(7, 121, 228);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+#directorFooter{
+    position: absolute;
+    bottom: 0;
+    border-top: solid 2px rgb(39, 46, 82);
+    
+}
+#directorUser{
+    border-bottom: solid 1px rgb(39, 46, 82);
+    
+   
+}
+
