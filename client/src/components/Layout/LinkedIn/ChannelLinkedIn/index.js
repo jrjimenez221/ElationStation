@@ -24,6 +24,7 @@ function ChannelLinkedIn() {
         <div className="col-10 col-md-11 h-100">
           <div className="row">
             <LinkInSignIn />
+            
           </div>
 
         </div>
