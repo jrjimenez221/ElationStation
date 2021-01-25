@@ -16,5 +16,15 @@ export default {
   // Saves a book to the database
   saveBook: function(bookData) {
     return axios.post("/api/books", bookData);
+  },
+
+
+  // How does this connect to the database 
+  signIn: function(formData) {
+    return axios.post("/api/signIn", formData);
+  },
+  //Would I change the api/books like this. Does it affect anything? 
+  signUp: function(formData) {
+    return axios.post("/api/account", formData);
   }
 };
