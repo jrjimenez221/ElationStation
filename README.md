@@ -1,8 +1,4 @@
-<div align="center">
-
 # Elation Station
-
-</div>
 
 - Live Demo: [Live Demo]()
 
