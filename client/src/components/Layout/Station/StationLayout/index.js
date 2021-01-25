@@ -1,12 +1,10 @@
 import React from "react";
-import "./style.css";
-import Portfolio from "../Portfolio"; 
-import UITwo from "../UITwo"; 
-import Directory from "../Directory"; 
+
+import Directory from "../../Directory"; 
 
 
 
-import { Route, BrowserRouter as Router, Switch, Link, Redirect } from "react-router-dom";
+// import { Route, BrowserRouter as Router, Switch, Link, Redirect } from "react-router-dom";
 import StationProfile from "../StationProfile";
 
 

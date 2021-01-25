@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
 
-import Directory from "../../Station/Directory"; 
+import Directory from "../../Directory"; 
 
 
 
-import { Route, BrowserRouter as Router, Switch, Link, Redirect } from "react-router-dom";
+// import { Route, BrowserRouter as Router, Switch, Link, Redirect } from "react-router-dom";
 import LinkInSignIn from "../LinkInSignIn";
 
 

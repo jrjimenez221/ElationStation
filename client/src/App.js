@@ -2,11 +2,10 @@ import React from "react";
 import "./appStyle.css";
 
 import SignInPage from "./components/Layout/SignInPage";
-import NavBar from "./components/Layout/Nav";
-import Footer from "./components/Layout/Footer";
+
 import Station from "./components/Layout/Station/StationLayout";
 import ChannelTwit from "./components/Layout/Twitter/ChannelTwit";
-// import ChannelLinkedIn from "./components/Layout/LinkedIn/ChannelLinkedIn";
+
 
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -24,7 +23,6 @@ export default function App() {
         <div id="motherFooter" className="row m-0 p-0 h-100" >
           <div id="first12" className="col-12 m-0 " >
 
-          
 
             <Switch>
                       
@@ -54,11 +52,6 @@ export default function App() {
             </Switch> 
           </div>
         </div>
-          
-        
-        
-
-        
         
       </div>
     </Router>

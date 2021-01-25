@@ -85,6 +85,9 @@
     
     
 }
+.OFH{
+    overflow: hidden;
+}
 /* body::-webkit-scrollbar{
     width: 1em;
 }
