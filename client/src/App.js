@@ -17,7 +17,7 @@ import ChannelFacebook from "./components/Layout/Facebook/ChannelFB";
 export default function App() {
   return (
     <Router>
-      <div id="thePage" className="container-fluid  p-0 m-0" style={{position:"absolute", right:"0", left:"0", top:"0", bottom:"0"}}>
+      <div id="thePage" className="container-fluid bg-secondary p-0 m-0" style={{position:"absolute", right:"0", left:"0", top:"0", bottom:"0"}}>
         
         
       

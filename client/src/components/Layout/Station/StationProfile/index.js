@@ -7,7 +7,7 @@ function StationProfile() {
     
 
     
-    <div className="row bg-info h-100 m-0 p-0 " >
+    <div className="row  h-100 m-0 p-0 " >
     
       <div id="TwitFeed" className="col-12 col-md-6 offset-md-5 h-100  p-0" style={{ overflowY:"auto",position:"absolute",top:"0",bottom:"0"}}>
       
