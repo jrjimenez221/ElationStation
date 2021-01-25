@@ -1,7 +1,7 @@
 import React from "react";
 import "./twitStyle.css";
 import Twit from "../Twit";
-
+import SearchBar from "../SearchBar"
 function TwitProfile() {
   return (
     
@@ -34,7 +34,7 @@ function TwitProfile() {
             
           </div>
         </div>
-
+          <SearchBar/> 
         <div style={{ height:"auto"}}>
 
     
