@@ -17,13 +17,13 @@ function SignIn() {
     event.preventDefault();
 console.log(event.target)
 console.log(emailRef.current.value, passwordRef.current.value)
-API.signIn({email:emailRef.current.value, password:passwordRef.current.value})
+// API.signIn({email:emailRef.current.value, password:passwordRef.current.value})
   }
   function signUp(event) {
     event.preventDefault();
 console.log(event.target)
 // console.log(email:emailRef.current.value, password:passwordRef.current.value)
-API.signUp()
+// API.signUp()
   }
   return (
     <div className="container">
