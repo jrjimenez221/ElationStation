@@ -1,4 +1,5 @@
-const fetch = require(`node-fetch`);
+const path = require("path");
+const router = require("express").Router();
 const Twit = require("twit")
 require("dotenv").config()
 
@@ -7,10 +8,10 @@ require("dotenv").config()
 
 //From node library Twit creates a twitter constructor 
 let client = new Twit({
-    consumer_key:process.env.TWITTER_API_KEY,
-    consumer_secret: process.env.TWITTER_API_SECRET_KEY,
-    access_token: process.env.ACCESS_TOKEN,
-    access_token_secret: process.env.ACCESS_TOKEN_SECRET
+    consumer_key:process.env.REACT_APP_TWITTER_API_KEY,
+    consumer_secret: process.env.REACT_APP_TWITTER_API_SECRET_KEY,
+    access_token: process.env.REACT_APP_ACCESS_TOKEN,
+    access_token_secret: process.env.REACT_APP_ACCESS_TOKEN_SECRET
 
 });
 
@@ -23,6 +24,39 @@ console.log(data);
 }
 })
 
+
+
+// API Routes
+router.get("/twitter", function(req,res) {
+    let client = new Twit({
+        consumer_key:process.env.REACT_APP_TWITTER_API_KEY,
+        consumer_secret: process.env.REACT_APP_TWITTER_API_SECRET_KEY,
+        access_token: process.env.REACT_APP_ACCESS_TOKEN,
+        access_token_secret: process.env.REACT_APP_ACCESS_TOKEN_SECRET
+    
+    });
+    
+    
+    let params = {screen_name:"fallguysgame" ,  count:"10" }
+    
+    client.get('statuses/user_timeline', params, function (err,data,) {
+    if (!err) {
+    res.json(data);
+    } else{
+        res.json(err)
+    }
+    })
+});
+
+// If no API routes are hit, send the React app
+router.use(function(req, res) {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
+
+
+
+
+module.exports = router;
 
 // Example POST method implementation:
 // async function postData(
@@ -53,28 +87,6 @@ console.log(data);
 
 
 
-// function twitterSearch(bodyParamSearch) {
-//     // console.log('test')
-//     return postData(process.env.GET_TOKEN, {
-//         client_id: process.env.CLIENT_ID_TWITCH,
-//         client_secret: process.env.CLIENT_SECRET_TWITCH,
-//         grant_type: `client_credentials`,
-//     }).then((data) => {
-//         // console.log(data); // JSON data parsed by `data.json()` call
-//         bodyParamSearch = `"${bodyParamSearch}"`;
-//         return postData(
-//             `https://api.igdb.com/v4/games`,
-//             'fields *; search ' + bodyParamSearch + '; limit 10;', {
-//                 'Client-ID': process.env.CLIENT_ID_TWITCH,
-//                 'Authorization': `Bearer ` + data.access_token,
-//             },
-//             'text/plain',
-//         );
-
-//     });
-
-
-// }
 
 
 
