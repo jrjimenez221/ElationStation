@@ -50,37 +50,7 @@ function LinkInSignIn() {
                   <img src={LinkinImg}></img>
                 </a>
               </div>
-              <div className="form-group row justify-content-around">
-                <input
-                  type="email"
-                  class="form-control mt-3 col-6 bg-dark border-dark"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Enter email"
-                />
-              </div>
-
-              <div className="form-group row justify-content-around ">
-                <input
-                  type="password"
-                  class="form-control col-6 bg-dark border-dark"
-                  id="exampleInputPassword1"
-                  placeholder="Password"
-                />
-              </div>
-
-              <div className="row justify-content-around pl-4 pr-4">
-                <a
-                  href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&state=987654321&scope=r_liteprofile%20r_emailaddress&client_id=78o6w4y2569mqx&redirect_uri=https%3A%2F%2Felation-station.herokuapp.com%2F"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  type="submit"
-                  class="btn btn-primary col-5 col-md-2"
-                >
-                  Sign In
-                  {/* Have a function that keeps an eye out for verification on external site through this connection, and then redirect to LinkedIn home/main page */}
-                </a>
-              </div>
+              {/* Have a function that keeps an eye out for verification on external site through this connection, and then redirect to LinkedIn home/main page */}
             </form>
           </div>
         </div>
@@ -91,10 +61,4 @@ function LinkInSignIn() {
 
 export default LinkInSignIn;
 
-// linkedin sign in href
 
-// const appLink = "https://www.linkedin.com/oauth/v2/authorization?response_type=code&state=987654321&scope=r_liteprofile%20r_emailaddress&client_id=78o6w4y2569mqx&redirect_uri=https%3A%2F%2Felation-station.herokuapp.com%2F";
-
-//<a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&state=987654321&scope=r_liteprofile%20r_emailaddress&client_id=78o6w4y2569mqx&redirect_uri=https%3A%2F%2Felation-station.herokuapp.com%2F">
-// <img src={linkedinImg}></img>
-//</a>
