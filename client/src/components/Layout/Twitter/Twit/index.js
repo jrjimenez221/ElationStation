@@ -57,7 +57,7 @@ function Twit(props) {
                     </div>
                   </div>
                 </div>
-                <div className="date">{props.created_at}</div>
+                <div className="date">{props.createdAt}</div>
 
               </div>
                 
