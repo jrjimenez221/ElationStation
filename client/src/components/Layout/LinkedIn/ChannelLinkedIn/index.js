@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import LinkInSignIn from "../LinkInSignIn";
+import LinkedInSignIn from "../LinkedInSignIn";
 import Directory from "../../Station/Directory"; 
 import LinkProfile from "../LinkProfile"
 
@@ -24,7 +24,7 @@ function ChannelLinkedIn() {
         <div className="col-10 col-md-11 h-100">
           <div className="row">
           <LinkProfile />
-            <LinkInSignIn />
+            <LinkedInSignIn />
           </div>
         </div>
             
