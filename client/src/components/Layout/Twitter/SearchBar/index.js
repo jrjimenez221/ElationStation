@@ -15,6 +15,7 @@ function SearchBar(props) {
                     <span className="navbar-toggler-icon"></span>
                  </button>
                   
+
                                     <form className="d-flex col-9" >
                                          <input className="form-control me-2" 
                                          type="search" 
@@ -22,6 +23,7 @@ function SearchBar(props) {
                                          ref = {props.tweetRef}
                                          aria-label="Search"/> 
                                             <button className="btn btn-outline-light bg-dark btn-light" onClick={props.searchTweets} type="submit">Search</button>
+
                                      </form>
                      </div>
             </nav>
