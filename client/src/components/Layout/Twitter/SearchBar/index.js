@@ -1,17 +1,10 @@
 import React from "react";
 import { useRef } from "react";
+import API from "../../../../utils/API"
 
 
+function SearchBar(props) {
 
-function SearchBar() {
-const tweetRef = useRef();
-
-    function searchTweets(event) {
-        event.preventDefault();
-        console.log(event.target);
-        console.log(tweetRef.current.value)
-        TwitterAPI.searchTweets({tweetQuery:tweetRef.current.value})
-    }
     return (
         <>
         <div className= "row">
@@ -22,13 +15,13 @@ const tweetRef = useRef();
                     <span className="navbar-toggler-icon"></span>
                  </button>
                   
-                                    <form className="d-flex col-9" onSubmit={searchTweets}>
+                                    <form className="d-flex col-9" >
                                          <input className="form-control me-2" 
                                          type="search" 
                                          placeholder="Search User for their recent tweets" 
-                                         ref = {tweetRef}
+                                         ref = {props.tweetRef}
                                          aria-label="Search"/> 
-                                            <button className="btn btn-outline-light bg-dark btn-light"type="submit">Search</button>
+                                            <button className="btn btn-outline-light bg-dark btn-light" onClick={props.searchTweets} type="submit">Search</button>
                                      </form>
                      </div>
             </nav>

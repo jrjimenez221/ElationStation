@@ -27,7 +27,7 @@ console.log(data);
 
 
 // API Routes
-router.get("/twitter", function(req,res) {
+router.post("/twitter", function(req,res) {
     let client = new Twit({
         consumer_key:process.env.REACT_APP_TWITTER_API_KEY,
         consumer_secret: process.env.REACT_APP_TWITTER_API_SECRET_KEY,
@@ -37,8 +37,10 @@ router.get("/twitter", function(req,res) {
     });
     
     
-    let params = {screen_name:"fallguysgame" ,  count:"10" }
-    
+    let params = {screen_name:req.body.screenName ,  count:"10" }
+    console.log("----------------------------------------------------------------------")
+    console.log(params)
+    console.log("----------------------------------------------------------------------")
     client.get('statuses/user_timeline', params, function (err,data,) {
     if (!err) {
     res.json(data);

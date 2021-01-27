@@ -18,6 +18,11 @@ export default {
     return axios.post("/api/books", bookData);
   },
 
+  searchTweets: function(screenName) {
+    return axios.post("/twitter", screenName);
+  },
+
+  
 
   // How does this connect to the database 
   signIn: function(formData) {
