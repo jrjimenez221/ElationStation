@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fdbe5721.chunk.css",
+    "main.js": "/static/js/main.db7f8928.chunk.js",
+    "main.js.map": "/static/js/main.db7f8928.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.992eac29.js",
+    "runtime-main.js.map": "/static/js/runtime-main.992eac29.js.map",
+    "static/css/2.4210231d.chunk.css": "/static/css/2.4210231d.chunk.css",
+    "static/js/2.de90568f.chunk.js": "/static/js/2.de90568f.chunk.js",
+    "static/js/2.de90568f.chunk.js.map": "/static/js/2.de90568f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f4594dc825ac5285c94ea88d988f3ff9.js": "/precache-manifest.f4594dc825ac5285c94ea88d988f3ff9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.4210231d.chunk.css.map": "/static/css/2.4210231d.chunk.css.map",
+    "static/css/main.fdbe5721.chunk.css.map": "/static/css/main.fdbe5721.chunk.css.map",
+    "static/js/2.de90568f.chunk.js.LICENSE.txt": "/static/js/2.de90568f.chunk.js.LICENSE.txt",
+    "static/media/twitStyle.css": "/static/media/backgroundSample.0a0c08cd.png",
+    "static/media/bg2.jpg": "/static/media/bg2.b2d5212d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.992eac29.js",
+    "static/css/2.4210231d.chunk.css",
+    "static/js/2.de90568f.chunk.js",
+    "static/css/main.fdbe5721.chunk.css",
+    "static/js/main.db7f8928.chunk.js"
+  ]
+}
