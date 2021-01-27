@@ -5,9 +5,10 @@ import "./Twit.css";
 
 
 
-function Twit() {
+function Twit(props) {
   return (
     <>
+
         <div className="TwitComponent row p-1 p-md-2 mb-5 mb-md-2" style={{maxHeight:"15vh"}}>
             <div className="col-12 col-md-12 bg-dark text-white-50" style={{borderRadius:"10px"}}>
 
@@ -15,11 +16,11 @@ function Twit() {
                 <div className="col-3">
                   <div className="row">
 
-                    <img src="../../icons/MiniReyIcon.png" className="align-self-center" width="30" height="30" alt="ds" />
+                    <img src={props.user.profile_image_url} className="align-self-center" width="30" height="30" alt="ds" />
                     <div className="col-6">
                         <div className="row">
-                          <div className="col-12">Jose</div>
-                          <div className="col-12">@username</div>
+                          <div className="col-12">{props.user.name}</div>
+                          <div className="col-12">@{props.user.screen_name}</div>
                         </div>
                     </div>
                   </div>
@@ -32,7 +33,7 @@ function Twit() {
               </div>
 
               <div className="row pt-2">
-                <p className="col-12">The common Twit in it's natural habitat.</p>
+                <p className="col-12">{props.text}</p>
               </div>
 
               <div className="TwtFoot row justify-content-between ml-2 mr-2 p-2">
@@ -56,7 +57,7 @@ function Twit() {
                     </div>
                   </div>
                 </div>
-                <div className="date">22 Jan 2021</div>
+                <div className="date">{props.createdAt}</div>
 
               </div>
                 

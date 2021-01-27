@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
-
-import Directory from "../../Directory"; 
-
-
-
-// import { Route, BrowserRouter as Router, Switch, Link, Redirect } from "react-router-dom";
 import LinkInSignIn from "../LinkInSignIn";
+import Directory from "../../Directory"; 
+import LinkProfile from "../LinkProfile"
+
+
+import { Route, BrowserRouter as Router, Switch, Link, Redirect } from "react-router-dom";
+
 
 
 
@@ -23,10 +23,12 @@ function ChannelLinkedIn() {
 
         <div className="col-10 col-md-11 h-100">
           <div className="row">
+          <LinkProfile />
             <LinkInSignIn />
           </div>
-
         </div>
+            
+
 
         
       
@@ -37,3 +39,28 @@ function ChannelLinkedIn() {
 }
 
 export default ChannelLinkedIn;
+
+
+{/* <div className="col-10 col-md-11 p-0 m-0 ">
+            
+      
+<Switch>
+    
+  <Route exact path="/station/twitter/Home">
+  <Portfolio />                  
+  </Route>
+    
+  <Route exact path="/station/twitter/notifications">
+  <UITwo />
+  </Route>
+    
+  <Route exact path="/station/twitter/messages">
+  <Portfolio />
+  </Route>
+    
+  <Route exact path="/station/twitter/profile">
+  <Portfolio />
+  </Route>
+    
+</Switch>
+</div> */}
