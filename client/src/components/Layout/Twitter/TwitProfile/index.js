@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useRef, useState }  from "react";
 import "./twitStyle.css";
 import Twit from "../Twit";
+import API from "../../../../utils/API"
 import SearchBar from "../SearchBar"
+
+// Const = [userState, setUserState] = useState({username:””, password:””})
+
+
 function TwitProfile() {
+  const tweetRef = useRef();
+const [tweetState, setTweetState] = useState([])
+
+  function searchTweets(event) {
+      const nameObject = {screenName:tweetRef.current.value}
+      event.preventDefault();
+      console.log(event.target);
+      console.log({screenName:tweetRef.current.value})
+      API.searchTweets(nameObject)
+      .then( function (res) {
+        setTweetState(res.data)
+        console.log("I am inside of TwitProfile ")
+          console.log(res.data)
+      } )
+  
+  }
+
+
   return (
     
 
@@ -34,10 +57,14 @@ function TwitProfile() {
             
           </div>
         </div>
-          <SearchBar/> 
+          <SearchBar searchTweets= {searchTweets} tweetRef= {tweetRef} /> 
         <div style={{ height:"auto"}}>
 
-    
+    {tweetState.map(tweet =>  
+      <Twit text={tweet.text} user={tweet.user} createdAt={tweet.created_at}  /> 
+     )}
+          {/* <Twit/> */}
+          {/* <Twit/>
           <Twit/>
           <Twit/>
           <Twit/>
@@ -55,9 +82,7 @@ function TwitProfile() {
           <Twit/>
           <Twit/>
           <Twit/>
-          <Twit/>
-          <Twit/>
-          <Twit/>
+          <Twit/> */}
         </div>
 
         <div className="row h-10 bg-dark justify-content-center pt-3 pt-md-1 pb-3 pb-md-1 border-top border-secondary">
