@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import SignIn from "../SignIn";
 import background from "../../../assets/bg2.jpg";
-import { Route, BrowserRouter as Router, Switch, Link, Redirect } from "react-router-dom";
+import { BrowserRouter as Link} from "react-router-dom";
 
 
 

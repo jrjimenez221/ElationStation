@@ -24,7 +24,7 @@
     margin: 0;
     overflow: hidden;
     
-    background-color: darkslategray;
+    
 }
 
 
@@ -79,11 +79,14 @@
     padding: 0px;
     padding-top: 10px;
     overflow: hidden;
-    border-right: solid 3px rgb(26, 43, 124);    
+    border-right: solid 1px rgb(26, 43, 124);    
     min-height: 75vh;
     
     
     
+}
+.OFH{
+    overflow: hidden;
 }
 /* body::-webkit-scrollbar{
     width: 1em;

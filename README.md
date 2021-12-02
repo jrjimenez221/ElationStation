@@ -1,5 +1,3 @@
-<div align="center">
-
 # Elation Station
 
 </div>

@@ -43,10 +43,7 @@ function LinkInSignIn() {
               <br></br>
 
               <div className="row text-center justify-content-around">
-                <a
-                  href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&state=987654321&scope=r_liteprofile%20r_emailaddress&client_id=78o6w4y2569mqx&redirect_uri=https%3A%2F%2Felation-station.herokuapp.com%2F
-"
-                >
+                <a href="https://www.linkedin.com/oauth/v2/authorization?response_type=code&state=987654321&scope=r_liteprofile%20r_emailaddress&client_id=78o6w4y2569mqx&redirect_uri=https%3A%2F%2Felation-station.herokuapp.com%2F">
                   <img src={LinkinImg}></img>
                 </a>
               </div>

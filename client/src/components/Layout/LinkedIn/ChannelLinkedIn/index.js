@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import LinkInSignIn from "../LinkInSignIn";
-import Directory from "../../Station/Directory"; 
+import Directory from "../../Directory"; 
 import LinkProfile from "../LinkProfile"
 
 

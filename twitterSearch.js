@@ -16,7 +16,7 @@ let client = new Twit({
 });
 
 
-let params = {screen_name:"fallguysgame" ,  count:"10" }
+let params = {screen_name:"" ,  count:"10" }
 
 client.get('statuses/user_timeline', params, function (err,data,response) {
 if (!err) {

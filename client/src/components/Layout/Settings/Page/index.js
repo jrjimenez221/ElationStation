@@ -1,11 +1,11 @@
 import React from "react";
 
 
-import Directory from "../../Station/Directory"; 
+import Directory from "../../Directory"; 
 
 
 
-import { Route, BrowserRouter as Router, Switch, Link, Redirect } from "react-router-dom";
+// import { Route, BrowserRouter as Router, Switch, Link, Redirect } from "react-router-dom";
 import SettingsList from "../Layout";
 
 

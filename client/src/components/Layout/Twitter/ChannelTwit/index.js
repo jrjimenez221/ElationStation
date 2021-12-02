@@ -1,10 +1,10 @@
 import React from "react";
 import "./twitStyle.css";
-import Directory from "../../Station/Directory"; 
+import Directory from "../../Directory"; 
 import Portfolio from "../TwitProfile"; 
 import UITwo from "../UITwo"; 
 
-import { Route, BrowserRouter as Router, Switch, Link, Redirect } from "react-router-dom";
+import { Route, BrowserRouter as Switch} from "react-router-dom";
 
 
 
